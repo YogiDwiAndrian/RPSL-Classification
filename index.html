@@ -1,0 +1,51 @@
+<html>
+<head>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"> </script>
+<script src="webcam.js"></script>
+<script src="rps-dataset.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1 style="text-align: center;">Klasifikasi Gambar Gestur Tangan</h1>
+    <div class="container">
+    <div class="left">
+        <h2 id="rocksamples">Rock Samples:</h2>
+        <h2 id="papersamples">Paper Samples:</h2>
+        <h2 id="scissorssamples">Scissors Samples:</h2>
+        <h2 id="spocksamples">Spock Samples:</h2>
+        <h2 id="lizardsamples">Lizard Samples:</h2></h2>
+    </div>
+    <div class="center">
+        <div>
+            <video autoplay playsinline muted id="wc" width="224" height="224"></video>
+        </div>
+        <h3>Capture Data</h3>
+        <button class="button button1" type="button" id="0" onclick="handleButton(this)" >Rock</button>
+        <button class="button button2" type="button" id="1" onclick="handleButton(this)" >Paper</button>
+        <button class="button button3" type="button" id="2" onclick="handleButton(this)" >Scissors</button>
+        <button class="button button4" type="button" id="3" onclick="handleButton(this)" >Spock</button>
+        <button class="button button5" type="button" id="4" onclick="handleButton(this)" >Lizard</button>
+        
+        <div>
+            <h3>Train Data</h3>
+            <button class="button btn6" type="button" id="train" onclick="doTraining()" ><span>Train Network</span></button>
+        </div>
+        
+    </div>
+    <div class="right">
+    <h3>Once training is complete, click 'Start Predicting' to see predictions, and 'Stop Predicting' to end. Once you are happy with your model, click 'Download Model' to save the model to your local disk.</h3>
+    <div class="btn-group">
+        <button type="button" id="startPredicting" onclick="startPredicting()" >Start Predicting</button>
+        <button type="button" id="stopPredicting" onclick="stopPredicting()" >Stop Predicting</button>
+        <button type="button" id="saveModel" onclick="saveModel()" >Download Model</button>
+    </div>
+    <div>
+        <h1 id="prediction">I see gesture</h1>
+    </div>
+    </div>
+    </div>
+</body>
+
+<script src="index.js"></script>
+</html>

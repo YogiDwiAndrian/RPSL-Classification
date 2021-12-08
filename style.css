@@ -1,0 +1,137 @@
+body {
+    padding: 1%;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+ }
+ * {
+    box-sizing: border-box;
+ }
+ .left, .right, .center {
+    float: left;
+    color: white;
+    padding: 10px;
+    height: 500px;
+    text-align: center;
+ }
+ .left {
+    background-color: tomato;
+    width: 25%;
+ }
+ .right {
+    background-color: teal;
+    width: 35%;
+ }
+ .center {
+    background-color: rgb(166, 71, 255);
+    width: 40%;
+ }
+ .container:after {
+    clear: both;
+ }
+
+ .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 8px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+  }
+  
+  .button1:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+  }
+  
+  .button2:hover {
+    background-color: #008CBA;
+    color: white;
+  }
+  
+  .button3 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #f44336;
+  }
+  
+  .button3:hover {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .button4 {
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+  }
+  
+  .button4:hover {
+    background-color: #ec03b2;
+    color: white;
+    }
+  
+  .button5 {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+  }
+  
+  .button5:hover {
+    background-color: #555555;
+    color: white;
+  }
+
+  .btn6 {
+    width: 90%;
+    background-color: #04AA6D;
+    color: #ffffff;
+    border: 2px solid #e7e7e7;
+  }
+  
+  .btn6:hover {
+    background-color: #059862;
+    color: white;
+  }
+
+  .btn-group button {
+    background-color: #04AA6D; /* Green background */
+    border: 1px solid green; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+  }
+  
+  .btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+  
+  /* Clear floats (clearfix hack) */
+  .btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Add a background color on hover */
+  .btn-group button:hover {
+    background-color: #3e8e41;
+  }
+  
+  
